@@ -31,7 +31,7 @@ def testing(get_chrome_options):
     selenium.quit()
 
 
-# TEST_01
+# TEST_08
 # проверка, что пользователь может перейти на страницу поиска товаров
 def test_opening_search_page(testing):
     selenium = testing
@@ -46,7 +46,7 @@ def test_opening_search_page(testing):
         print('Тест провален')
 
 
-# TEST_02
+# TEST_09
 # проверка, что пользователь может выбрать смартфоны по заданным условиям
 def test_checkbox_smartphone(testing):
     selenium = testing
@@ -88,7 +88,7 @@ def test_checkbox_smartphone(testing):
     assert selenium.find_element(By.XPATH, '//*[@id="catalog"]/div[6]/div[1]/div[4]/ul/li').text == 'Samsung'
 
 
-# TEST_03
+# TEST_10
 # проверка, что на странице новогодних товаров пользователь может выбрать гирлянды
 def test_checkbox_smartphone_lights(testing):
     selenium = testing
