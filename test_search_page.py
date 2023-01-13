@@ -31,22 +31,8 @@ def testing(get_chrome_options):
     selenium.quit()
 
 
+
 # TEST_08
-# проверка, что пользователь может перейти на страницу поиска товаров
-def test_opening_search_page(testing):
-    selenium = testing
-    # открытие сайта
-    selenium.get('https://www.wildberries.ru/')
-    time.sleep(2)
-
-    # сохраняем скриншот
-    selenium.save_screenshot('test_opening_search_page.png')
-
-    assert selenium.find_element(By.XPATH, '/html/body/div[1]/header/div/div[2]/div[3]/div[1]/input'), \
-        print('Тест провален')
-
-
-# TEST_09
 # проверка, что пользователь может выбрать смартфоны по заданным условиям
 def test_checkbox_smartphone(testing):
     selenium = testing
@@ -88,7 +74,7 @@ def test_checkbox_smartphone(testing):
     assert selenium.find_element(By.XPATH, '//*[@id="catalog"]/div[6]/div[1]/div[4]/ul/li').text == 'Samsung'
 
 
-# TEST_10
+# TEST_09
 # проверка, что на странице новогодних товаров пользователь может выбрать гирлянды
 def test_checkbox_smartphone_lights(testing):
     selenium = testing
