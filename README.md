@@ -1,6 +1,6 @@
-# test_task_1
+# automated_testing_selenium_1
 
-Тестовое задание на вакансию "Тестировщик-автоматизатор на Python". Объект тестирования: интернет-магазин "Wildberries" https://www.wildberries.ru/
+Объект тестирования: интернет-магазин "Wildberries" https://www.wildberries.ru/
 
 Требования:
 1. Разработать тест-кейсы;
