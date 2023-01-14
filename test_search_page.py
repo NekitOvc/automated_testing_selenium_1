@@ -14,8 +14,7 @@ def get_chrome_options():
     options.add_argument('chrome')
     # запускает браузер в развернутом виде
     options.add_argument('--start-maximized')
-    # начальный размер окна браузера
-    options.add_argument('--window-size=1440,900')
+
     return options
 
 
